@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task-6</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.cont{
+			width: 980px;
+			height: 1386px;
+			padding: 0 15px;
+		}
+		/*head*/
+		.head{
+			position: relative;
+			width: 892px;
+			border-bottom: 2px solid #938e8c;
+			font-size: 12px;
+			font-family: SimHei ;
+
+		}
+		.title{
+			width: 110px;
+			padding-top: 40px;
+			padding-bottom: 3px;
+			background-color: #F08080;
+			color: #ffffff;
+		}
+		.title span{margin-bottom: -30px;}
+		.time{
+			float: right;
+			color: #d45d5c;
+			margin-top: -20px;
+		}
+		/*first*/
+		.first{
+			padding:20px 0;
+		}
+		.first img{
+			width: 641px;
+			height: 301px;
+		}
+		.ff, .fs{
+			/*float: left;*/
+			}
+		.fs, .split{
+			width: 203px;
+		}
+		.fs{
+			margin-left: 690px;
+			margin-top: -303px;
+		}
+		.split{
+			border-bottom: 2px solid #cc8091;
+			margin-bottom: 10px;
+		}
+		.fs span{
+			text-decoration: underline;
+			font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu ;
+			font-size: 24px;
+			color: #000000;
+		}
+		.fs p{
+			font-size: 12px;
+			color: #676767;
+			font-family: KaiTi;
+		}
+		.nub{
+			font-size: 116px;
+			color: #75b86b;
+			font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu ;
+		}
+		.nub i{margin-left: -20px;}
+		.css{
+			font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu ;
+			color: #cc8091;
+		}
+		.css div:first-child{
+			font-size: 55px;
+			float: left;
+		}
+		.css div:last-child{
+			padding-top: 24px;
+			margin-left: 87px;
+		}
+		.css p{text-decoration: none;}
+		.css p:first-child{
+			font-size: 21px;
+		}
+		.css p:last-child{
+			font-size: 12px;
+		}
+		/*two*/
+		.two{
+			/*background-color: #EEB4B4;*/
+		}
+		.two article{
+			width: 200px;
+			float: left;
+			margin-left: 15px;
+			/*display: inline;*/
+		}
+		.two article:first-child{
+			margin-left: 0;
+		}
+		.two p{
+			line-height: 16px;
+		}
+		.artitle{
+			font-size: 16px;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		.artitle:first-child{
+			color: #75b86b;
+		}
+		.artitle:second-child{
+			color: #d2994f;
+		}
+		.arcont{
+			margin-top: 5px;
+			font-size: 12px;
+			color: #231815;
+			font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu ;
+			opacity: 0.7;
+		}
+		.wht{
+			font-size: 12px;
+			font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu ;
+			line-height: 16px;
+			opacity: 0.7;
+		}
+		.wht i{ color: #cd4a48;}
+		.wone{ margin-top: 15px;}
+		/*three*/
+		.three{
+			/*background-color: #E0FFFF;*/
+			margin-top: 185px;
+		}
+		.news{
+			width: 415px;
+		}
+		.news p{
+			color: #11456b;
+			font-size: 33px;
+			font-family: SimHei;
+			font-weight: bold;
+			padding: 8px;
+		}
+		.news p:first-child{
+			font-size: 42px;
+			/*line-height: 16px;*/
+		}
+		.news p:first-child i{
+			font-size: 72px;
+			color: #f5e327;
+			font-family: SimHei;
+			font-weight: bold;
+		}
+		.news .newsplit{
+			width: 100%;
+			border: 1px solid #11456b;
+		}
+		.newscont{
+			font-size: 12px !important;
+			color: #767777 !important;
+			font-family: SimSun !important;
+			padding: 16px 5px !important;
+			line-height: 18px;
+		}
+		.newscont span{
+			font-size: 70px;
+			color: #f5e327;
+			font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu ;
+			display: block;
+			line-height: 70px;
+			float: left;
+			margin-top: -6px;
+			margin-right: 4px;
+		}
+		.newscont img{
+			width: 240px;
+			padding: 15px 0 10px 6px;
+			float: right;
+		}
+		.pic{
+			width: 458px;
+			height: 275px;
+			margin-top: -647px;
+			margin-left: 430px;
+		}
+		.pic img{
+			width:458px;
+		}
+		.ptitle{
+			width: 458px;
+			height: 51px;
+			background-color: #969696;
+			padding-top: 10px;
+			margin-top:-65px;
+		}
+		.ptitle i{
+			font-size: 12px;
+			color: #72b16a;
+		}
+		.ptitle span{
+			font-style: normal;
+			font-size: 26px;
+			color: #ffffff;
+			font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu ;
+			border-left: 3px solid #72b16a;
+			margin-left: 30px;
+			margin-right: 10px;
+			padding-left: 10px;
+		}
+		.meau{
+			background-color: #EEE8CD;
+			margin-top: 20px;
+			padding: 10px;
+		}
+		.meau p{
+			padding: 10px;
+			font-size: 16px;
+			color: #5a5b5b;
+			font-family: SimSun ;
+		}
+		.mtitle{
+			font-size: 12px;
+			font-style: italic;
+		}
+		.left{
+			width: 240px;
+			padding-top: 20px;
+			margin-top: 20px;
+			background-color: #CD5555;
+			overflow: hidden;
+		}
+		.left p{
+			font-size: 12px;
+			font-family: SimHei ;
+			color: #ffffff;
+			padding: 6px;
+		}
+		.ling{
+			font-size: 110px;
+			color: #ffffff;
+			font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu ;
+			/*border-right: 8px solid #ffffff;*/
+			display: block;
+			/*height: 86px;*/
+			float: left;
+			margin-top: -40px;
+			margin-right: 10px;
+		}
+		.lsplit{
+			border-right: 2px solid #ffffff;
+			/*line-height: 86px;*/
+			/*padding: 20px;*/
+
+		}
+		.ltitle{
+			margin-bottom: 10px;
+			font-size: 14px;
+			font-style: italic;
+		}
+		.right{
+			width: 210px;
+			height:160px;
+			/*float: left;*/
+			margin-top: -120px;
+			margin-left: 240px;
+			font-size: 14px;
+			color: #5a5b5b;
+			font-family: SimHei ;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<div class="cont">
+		<div class="head">
+			<div class="title">
+				<span>ife.baidu.com</span>
+			</div>
+			<div class="time">2016.03</div>
+		</div>
+
+		<div class="first">
+			<div class="ff">
+				<img src="../pic/1.jpg">
+			</div>
+			<div class="fs">
+				<div class="split"></div>
+				<span class="about">About</span><br>
+				<span class="tec">Technologe</span>
+				<p>What are you talking about?</p>
+				<div class="nub"><i>700</i></div>
+				<div class="css">
+					<div>3.2</div>
+					<div>
+						<p>CSS</p>
+						<p>i can't see </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="two">
+			<article>
+				<p class="artitle">What</p>
+				<p class="arcont">前端前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前端前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前端前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段</p>
+			</article>
+			<article>
+				<p class="artitle">When</p>
+				<p class="arcont">前端前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前端前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前端前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段</p>
+			</article>
+			<article>
+				<p class="artitle">How</p>
+				<p class="arcont">前端段前段前前段前段前前段前段前段前段前段前段前段前段前段前段前段前段前段前段</p>
+				<p class="wht wone">What--------<i>40%</i></p>
+				<p class="wht">What--------<i>30%</i></p>
+				<p class="wht">What--------<i>30%</i></p>
+			</article>
+		</div>
+
+		<div class="three">
+			<div class="news">
+				<p><i>THE</i> TECHNOLOGE OF FRONT</p>
+				<P>前端技术领域</P>
+				<div class="newsplit"></div>
+				<article>
+					<p class="newscont"><span>前</span>端前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前端前段前段前段前段前段前段前段前段前前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前换行了换行了换行了换行了<br>
+					段前段前段前段前段前段前段前段前段前段前段前段前端前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前端前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前<img src="../pic/4.jpg">段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前换行了换行了换行了<br>段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段前段</p>
+				</article>
+			</div>
+			<div class="pic">
+				<div class="ppic">
+					<img src="../pic/4.jpg">
+				</div>
+				<div class="ptitle">
+					<i><span>前端技术</span>前端技术学院</i>
+				</div>
+				<div class="meau">
+					<p>前段前端前段前端前段前端.....................<span class="mtitle">前段</span></p>
+					<p>前段前端前段前端.........................<span class="mtitle">前段前端</span></p>
+					<p>前段前端前段前端前段前端.....................<span class="mtitle">前段</span></p>
+					<div class="left">
+						<p>
+							<span class="ling">0<span class="lsplit"></span></span><span class="ltitle">ONE TWO<br> THREE FORE FIVE</span><br><br>
+							hello world hello world hello world hello world
+						</p>
+					</div>
+					<div class="right">
+						<p>
+							<!-- 72px #d45d5c 黑体 -->
+							<span></span>
+							world hello world world hello world world hello world world hello world
+							<span></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div style="border-bottom:2px solid #ffffff;width:892px;"></div> -->
+		<hr class="hr">
+		<style type="text/css">
+			.hr{
+				width: 892px;
+				margin-top: 380px;
+			}
+		</style>
+	</div>
+	
+</body>
+</html>
