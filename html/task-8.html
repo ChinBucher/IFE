@@ -3,51 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" media="(min-device-width: 768px)" href="../css/task-8-1.css">
+	<link rel="stylesheet" media="(max-device-width: 768px)" href="../css/task-8-2.css">
 	<style type="text/css">
 		*{margin:0;padding:0;}
 		div{
 			border:1px solid #999;
 			background-color: #eee;
+			margin-top: 1%;
 			margin-left: 1%;
 			height: 50px;
 		}
 		.cont{
-			position: relative;
 			padding-right: 1%;
+			background-color: white;
+			border: none;
 		}
 		.cont div{float: left;}
-		@media screen and (min-device-width: 768px){
+		.wd:after{
+			content: "default"
+		}
+		/*@media screen and (min-device-width: 768px){
 			.l-col-1{width: 8%;}
-			.l-col-2{width: 15%;}
-			.l-col-3{width: 24.7%;}
+			.l-col-2{width: 15.7%;}
+			.l-col-3{width: 24.8%;}
 			.l-col-4{width: 31.5%;}
 			.l-col-6{width: 45%;}
-			
-		}
-		@media screen and (max-device-width: 768px) {
+		}*/
+
+		/*@media screen and (max-device-width: 768px) {
 			.m-col-2{width: 16%;}
 			.m-col-3{width: 24%;}
 			.m-col-4{width: 32%;}
 			.m-col-6{width: 48%;}
 			.m-col-8{width: 64%;}
 			.m-col-12{width: 100%;}
-		}
+		}*/
 	</style>
 </head>
 <body>
-	<div class="cont">
-		<div class="l-col-4 m-col-8">.l-col-4</div>
-		<div class="l-col-4 m-col-8">.l-col-4</div>
-		<div class="l-col-4 m-col-8">.l-col-4</div>
-		<div class="l-col-3 m-col-6">.l-col-3</div>
-		<div class="l-col-6 m-col-12">.l-col-6</div>
-		<div class="l-col-3 m-col-6">.l-col-3</div>
-		<div class="l-col-1 m-col-2">.l-col-1</div>
-		<div class="l-col-1 m-col-2">.l-col-1</div>
-		<div class="l-col-2 m-col-4">.l-col-2</div>
-		<div class="l-col-2 m-col-4">.l-col-2</div>
-		<div class="l-col-6 m-col-12">.l-col-6</div>
+	<div class="wd">
+		about width
 	</div>
+	<br><br>
+	<div class="cont">
+		<div class="l-col-4 m-col-6">.l-col-4 .m-col-6</div>
+		<div class="l-col-4 m-col-6">.l-col-4 .m-col-6</div>
+		<div class="l-col-4 m-col-12">.l-col-4 .m-col-12</div>
+		<div class="l-col-3 m-col-3">.l-col-3 .m-col-3</div>
+		<div class="l-col-6 m-col-6">.l-col-6 .m-col-6</div>
+		<div class="l-col-3 m-col-3">.l-col-3 .m-col-3</div>
+		<div class="l-col-1 m-col-2">.l-col-1 .m-col-2</div>
+		<div class="l-col-1 m-col-2">.l-col-1 .m-col-2</div>
+		<div class="l-col-2 m-col-8">.l-col-2 .m-col-8</div>
+		<div class="l-col-2 m-col-3">.l-col-2 .m-col-3</div>
+		<div class="l-col-6 m-col-3">.l-col-6 .m-col-3</div>
+	</div>
+
 </body>
 </html>
 

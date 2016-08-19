@@ -1,0 +1,12 @@
+@media screen and (max-device-width: 768px) {
+	.m-col-2{width: 16%;}
+	.m-col-3{width: 24%;}
+	.m-col-4{width: 32%;}
+	.m-col-6{width: 48%;}
+	.m-col-8{width: 64%;}
+	.m-col-12{width: 100%;}
+}
+.wd:before{
+	content: "max-device-width: 768px";
+	color: red;
+}

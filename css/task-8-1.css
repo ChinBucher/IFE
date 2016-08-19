@@ -1,0 +1,11 @@
+@media screen and (min-device-width: 768px){
+	.l-col-1{width: 8%;}
+	.l-col-2{width: 15.7%;}
+	.l-col-3{width: 24.8%;}
+	.l-col-4{width: 31.5%;}
+	.l-col-6{width: 45%;}
+}
+.wd:before{
+	content: "min-device-width: 768px";
+	color: blue;
+}
