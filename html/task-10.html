@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task-10</title>
+	<link rel="stylesheet" media="(min-device-width: 640px)" href="../css/task-10-1.css">
+	<link rel="stylesheet" media="(max-device-width: 640px)" href="../css/task-10-2.css">
+	<style type="text/css">
+		.flex-container{
+			display: -webkit-flex;
+			display: flex;
+			padding: 20px;
+			border: 1px solid black;
+		}
+		.flex-container div{
+			width: 150px;
+			border: 1px solid #f00;
+			margin: 20px;
+		}
+		.flex-item-1{
+			height: 120px;
+		}
+		.flex-item-2{
+			height: 100px;
+		}
+		.flex-item-3{
+			height: 40px;
+		}
+		.flex-container .flex-item-4{
+			height:200px;
+			border-color: #0f0;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div class="flex-item-1">flex-item-1</div>
+		<div class="flex-item-2">flex-item-2</div>
+		<div class="flex-item-3">flex-item-3</div>
+		<div class="flex-item-4">flex-item-1</div>
+	</div>
+	<br>
+	<div>
+		Q: change the width of container when the width of screen <= 640px
+	</div>
+</body>
+</html>
